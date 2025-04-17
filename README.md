@@ -49,7 +49,7 @@ Client Agent → ZTA Gateway → Policy Enforcer
 
 ### Client:
 ```bash
-python3 zta_application.py
+python3 zta_client_agent.py
 ```
 
 ### ZTA Gateway:
@@ -64,7 +64,7 @@ python3 zta_web_server.py
 ---
 
 ## ⚙️ Configuration
-- Update `ZTA_GATEWAY_URL` in `zta_application.py` with your gateway server's IP or domain:
+- Update `ZTA_GATEWAY_URL` in `zta_client_agent.py` with your gateway server's IP or domain:
   ```python
   ZTA_GATEWAY_URL = "http://<your-server-ip>:5000/secret"
   ```
@@ -76,7 +76,7 @@ python3 zta_web_server.py
 ---
 
 ## 📁 Files
-- `zta_application.py`: Client trust context generator
+- `zta_client_agent.py`: Client trust context generator
 - `zta_web_server.py`: Flask-based access gateway
 - `zta_policy_enforcer_monica.py`: Trust scoring engine
 
