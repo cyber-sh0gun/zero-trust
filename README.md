@@ -6,7 +6,7 @@ This project demonstrates a basic Zero Trust Architecture (ZTA) flow using Pytho
 
 ## 🧩 Components
 
-### 1. **Client Agent (`zta_application.py`)**
+### 1. **Client Agent (`zta_client_agent.py`)**
 Runs on the endpoint machine (e.g., a laptop) and performs the following:
 - Gathers trust context:
   - Username
@@ -26,7 +26,7 @@ Runs on the endpoint machine (e.g., a laptop) and performs the following:
   - ✅ Access granted + resource
   - ❌ Access denied + explanation
 
-### 3. **Policy Enforcer (`zta_policy_enforcer.py`)**
+### 3. **Policy Enforcer (`zta_policy_enforcer_monica.py`)**
 - Accepts trust context
 - Calculates a trust score based on configurable weights for each trust factor
 - Returns access decision (`granted: True | False`) and metadata
